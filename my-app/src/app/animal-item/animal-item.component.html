@@ -1,6 +1,14 @@
-<div>
-  <h1>Nome: {{animal.nome}}</h1>
-  <h1>Espécie: {{animal.especie}}</h1>
-  <h1>Idade: {{animal.idade}}</h1>
-  <h1>Sexo: {{animal.sexo}}</h1>
+<div *ngFor="let animal of animals"class="container">
+  <div *ngIf="animal.sexo == 'macho'" class="bg-color-animal-male animal-container">
+    <h1>Nome: {{animal.nome}}</h1>
+    <h1>Espécie: {{animal.especie}}</h1>
+    <h1>Idade: {{animal.idade}}</h1>
+    <h1>Sexo: {{animal.sexo}}</h1>
+  </div>
+  <div *ngIf="animal.sexo == 'femea'" class="bg-color-animal-femele animal-container">
+    <h1>Nome: {{animal.nome}}</h1>
+    <h1>Espécie: {{animal.especie}}</h1>
+    <h1>Idade: {{animal.idade}}</h1>
+    <h1>Sexo: {{animal.sexo}}</h1>
+  </div>
 </div>

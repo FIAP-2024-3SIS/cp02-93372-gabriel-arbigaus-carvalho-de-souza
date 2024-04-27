@@ -1,0 +1,19 @@
+.bg-color-animal-male{
+    background-color: grey;
+}
+
+.bg-color-animal-femele{
+    background-color: blue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .animal-container {
+    padding: 20px;
+    flex: 0 0 auto;
+  }
